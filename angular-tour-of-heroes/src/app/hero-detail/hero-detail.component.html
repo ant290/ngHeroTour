@@ -1,9 +1,12 @@
+<!--spit out properties of my hero property in the heroes component-->
 <div *ngIf="hero">
   <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
+  <!--edit hero details-->
   <div>
     <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name"/>
+      <input [(ngModel)]="hero.name" placeholder="name">
     </label>
   </div>
 </div>
+<button (click)="goBack()">go back</button>
